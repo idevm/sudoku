@@ -114,7 +114,7 @@ function removeParts(num) {
 
 }
 
-removeParts(1);
+removeParts(4);
 
 function init() {
 	let loc;
@@ -159,7 +159,7 @@ function setDigit(e) {
 		}
 	}
 	if (emptySlots <=0 && errors <= 0) {
-		alert('win');
+		alert('Вы выиграли!');
 	}
 }
 
