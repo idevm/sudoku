@@ -83,7 +83,6 @@ function shuffle() {
 }
 
 shuffle();
-console.log(rows);
 
 function fillField() {
 	let loc;
@@ -111,10 +110,9 @@ function removeParts(num) {
 			emptySlots++;		
 		}		
 	}
-
 }
 
-removeParts(4);
+removeParts(1);
 
 function init() {
 	let loc;
@@ -158,8 +156,11 @@ function setDigit(e) {
 			e.target.classList.remove('ok');
 		}
 	}
-	if (emptySlots <=0 && errors <= 0) {
+	if (emptySlots <= 0 && errors <= 0) {
 		alert('Вы выиграли!');
+	} else if (emptySlots <= 0 && errors > 0) {
+		alert('К сожалению, вы допустили ошибку.');
+		document.querySelectorAll('.error').forEach((i) => {i.style.color = 'red';});
 	}
 }
 
