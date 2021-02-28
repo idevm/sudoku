@@ -17,5 +17,14 @@ td {
 	text-align: center;
 }
 .gray {
-	background-color: gray;
+	background-color: lightgray;
+}
+#digits {
+	padding: 20px;
+}
+.choosen {
+	background-color: lightblue;
+}
+.playable {
+	color: blue;
 }
