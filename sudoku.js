@@ -112,7 +112,7 @@ function removeParts(num) {
 	}
 }
 
-removeParts(1);
+removeParts(4);
 
 function init() {
 	let loc;
